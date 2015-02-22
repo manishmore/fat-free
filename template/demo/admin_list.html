@@ -1,0 +1,19 @@
+<h2>{{@app}} list</h2>
+<F3:check if="{{@add==1}}">
+    <section>
+        <a class="admin-button" href="{{@BASE}}/admin/{{@app}}/add">Add {{@app}}</a>
+    </section>
+</F3:check>
+<section>
+    <repeat group="{{@list}}" key="{{ @key }}" value="{{ @obj}}" counter="{{ @counter }}">
+        <div class="admin-list">
+            <ul class="admin-ul">
+                <F3:include href="admin_{{ @app }}_list.html"/>
+        </div>
+        <F3:check if="{{@counter}}%3==0">
+            <div class="clear"></div>
+        </F3:check>
+    </repeat>
+</section>
+
+

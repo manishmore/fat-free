@@ -1,0 +1,14 @@
+<span><strong>Username:</strong></span><span>{{@obj.name}}</span><br />
+<span><strong>Email:</strong></span>
+<span>{{@obj.email}}</span><br />
+<span><strong>Organization:</strong></span><br />
+<span>{{@obj.organization}}</span><br />
+<!--<label for="link_{{@counter}}">link</label>
+<input id="link_{{@counter}}" type="text" value="{{@BASE}}/main/{{@app}}/show/{{@obj.name}}"/>
+-->
+<br />
+<nav>
+    <!--<a href="{{@BASE}}/admin/user/show/{{@obj.name}}">show</a> -->
+    <a href="{{@BASE}}/admin/user/edit/{{@obj.name}}">edit</a>
+    <a href="{{@BASE}}/admin/user/delete/{{@obj.name}}">delete</a>
+</nav>

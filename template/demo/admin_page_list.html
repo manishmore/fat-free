@@ -1,0 +1,8 @@
+<span><strong>titel:</strong></span><span>{{@obj.titel}}</span><br />
+<label for="link_{{@counter}}">link</label>
+<input id="link_{{@counter}}" type="text" value="{{@BASE}}/main/{{@app}}/show/{{@obj.name}}"/>
+<nav>
+    <a href="{{@BASE}}/main/page/show/{{@obj.name}}">show</a>
+    <a href="{{@BASE}}/admin/page/edit/{{@obj.name}}">edit</a>
+    <a href="{{@BASE}}/admin/page/delete/{{@obj.name}}">delete</a>
+</nav>
